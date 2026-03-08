@@ -7,11 +7,14 @@ import streamlit as st
 st.set_page_config(page_title="Wordle en Streamlit", page_icon="🟩", layout="centered")
 
 PALABRAS = [
-    "CLIMA","NUBES","SOLAR","FLORA","FAUNA","SUELO","AGUAS","OZONO",
-    "NIEVE","CALOR","VAPOR","GASES","CICLO","SELVA","PRADO","MONTE",
-    "CERRO","PLAYA","ROCAS","ARENA","RIOS","LAGOS","MARES","CAMPO",
-    "DELTA","HUMOS","FUEGO","LLANO","VALLE","ISLAS","COSTA","ARBOL",
-    "HOJAS","TRIGO","PESCA","HIELO","BRUMA","RIEGO","VERDE","CALMA"
+    "CLIMA", "NUBES", "SOLAR", "FLORA", "FAUNA", "SUELO", "AGUAS", "OZONO",
+    "NIEVE", "CALOR", "VAPOR", "GASES", "CICLO", "SELVA", "PRADO", "MONTE",
+    "CERRO", "PLAYA", "ROCAS", "ARENA", "RIOS",  "LAGOS", "MARES", "CAMPO",
+    "DELTA", "HUMOS", "FUEGO", "LLANO", "VALLE", "ISLAS", "COSTA", "ARBOL",
+    "HOJAS", "TRIGO", "PESCA", "HIELO", "BRUMA", "RIEGO", "VERDE", "ESMOG"
+    "ALGAS", "HONGO", "RAMAS", "LLUVIA", "DUNAS", "CAUCE", "FANGO", "POLEN",
+    "RAYOS", "FRUTO", "VIENTO", "BRISA", "BARRO", "PINOS", "BROTE", "SAVIA",
+    "LINCE", "COBRE", "MUSGO", "POZOS", "ABONO", "CERRO","BARRO", "BOLDO","CORAL"
 ]
 
 MAX_INTENTOS = 6
@@ -136,9 +139,22 @@ st.markdown(
 # =========================
 # INTERFAZ
 # =========================
-st.markdown('<div class="titulo">Wordle</div>', unsafe_allow_html=True)
+st.markdown("""
+<style>
+.titulo {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+</style>
+""", unsafe_allow_html=True)
+st.markdown('<div class="titulo">🌎 Wordle: Medio Ambiente</div>', unsafe_allow_html=True)
 st.markdown('<div class="subtitulo">Adivina la palabra de 5 letras</div>', unsafe_allow_html=True)
 
+#st.markdown('<div class="titulo">Wordle: Medio Ambiente </div>', unsafe_allow_html=True)
+#st.markdown('<div style="color: green; font-size:40px;">Wordle: Medio Ambiente</div>', unsafe_allow_html=True)
 
 def dibujar_tablero():
     html = ""
@@ -214,15 +230,7 @@ else:
 # =========================
 # AYUDA / EXPLICACIÓN
 # =========================
-with st.expander("¿Cómo funciona este código?"):
-    st.write(
-        """
-        - `st.session_state` guarda el estado del juego entre interacciones.
-        - `evaluar_intento()` compara el intento con la palabra secreta.
-        - `st.markdown(..., unsafe_allow_html=True)` permite dibujar la grilla con HTML y CSS.
-        - Los botones permiten enviar una palabra o reiniciar la partida.
-        """
-    )
+
 
 with st.expander("Palabras válidas de esta demo"):
     st.write(", ".join(PALABRAS_VALIDAS))
