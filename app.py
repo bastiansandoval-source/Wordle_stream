@@ -7,8 +7,11 @@ import streamlit as st
 st.set_page_config(page_title="Wordle en Streamlit", page_icon="🟩", layout="centered")
 
 PALABRAS = [
-    "CLIMA", "SUELO", "AGUAS", "BOSQUE", "NUBES", "FUEGO", "SOLAR", "FAUNA",
-    "FLORA", "VIENTO", "TIERRA", "LLUVIA", "MONTE", "CERRO", "PLAYA", "ROCAS"
+    "CLIMA","NUBES","SOLAR","FLORA","FAUNA","SUELO","AGUAS","OZONO",
+    "NIEVE","CALOR","VAPOR","GASES","CICLO","SELVA","PRADO","MONTE",
+    "CERRO","PLAYA","ROCAS","ARENA","RIOS","LAGOS","MARES","CAMPO",
+    "DELTA","HUMOS","FUEGO","LLANO","VALLE","ISLAS","COSTA","ARBOL",
+    "HOJAS","TRIGO","PESCA","HIELO","BRUMA","RIEGO","VERDE","CALMA"
 ]
 
 MAX_INTENTOS = 6
