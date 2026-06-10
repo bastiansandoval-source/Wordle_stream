@@ -7,7 +7,7 @@ import streamlit as st
 st.set_page_config(page_title="Wordle en Streamlit", page_icon="🟩", layout="centered")
 
 PALABRAS = [
-    "POLLO","RATON","RATAS","MONOS","LOROS","GALLO","GATOS","PERRO","ZORRO","PECES","SAPOS","RANAS","CERDO","VACAS","PATOS","MULAS","TIGRE","JOTES","ABEJA","OVEJA","CHITA","PULPO","PUMAS","BURRO","TOROS"
+    "CHILE", "CHINA","ISLAM","INDIA","LIBIA","ZAIRE","RUSIA","HAITI","MALTA","SIRIA","KABUL","MOSCU","QATAR","FIDJI","NAURU","WUHAN","COREA","RIYAD","RABAT","PARIS","MINSK","MILAN","GHANA","BENIN","ABUJA","ADDIS","DACCA","NEPAL","KUALA","QUITO","YEMEN","CAIRO","TUNEZ"
 ]
 
 MAX_INTENTOS = 6
@@ -143,7 +143,7 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
-st.markdown('<div class="titulo">🐤 🐣 Wordle: Animales</div>', unsafe_allow_html=True)
+st.markdown('<div class="titulo"> 🌍🌍Wordle: Paises y Capitales </div>', unsafe_allow_html=True)
 st.markdown('<div class="subtitulo">Adivina la palabra de 5 letras</div>', unsafe_allow_html=True)
 
 #st.markdown('<div class="titulo">Wordle: Medio Ambiente </div>', unsafe_allow_html=True)
