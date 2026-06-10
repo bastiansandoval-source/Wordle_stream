@@ -7,14 +7,7 @@ import streamlit as st
 st.set_page_config(page_title="Wordle en Streamlit", page_icon="🟩", layout="centered")
 
 PALABRAS = [
-    "CLIMA", "NUBES", "SOLAR", "FLORA", "FAUNA", "SUELO", "AGUAS", "OZONO",
-    "NIEVE", "CALOR", "VAPOR", "GASES", "CICLO", "SELVA", "PRADO", "MONTE",
-    "CERRO", "PLAYA", "ROCAS", "ARENA", "RIOS",  "LAGOS", "MARES", "CAMPO",
-    "DELTA", "HUMOS", "FUEGO", "LLANO", "VALLE", "ISLAS", "COSTA", "ARBOL",
-    "HOJAS", "TRIGO", "PESCA", "HIELO", "BRUMA", "RIEGO", "VERDE", "ESMOG"
-    "ALGAS", "HONGO", "RAMAS", "LLUVIA", "DUNAS", "CAUCE", "FANGO", "POLEN",
-    "RAYOS", "FRUTO", "VIENTO", "BRISA", "BARRO", "PINOS", "BROTE", "SAVIA",
-    "LINCE", "COBRE", "MUSGO", "POZOS", "ABONO", "CERRO","BARRO", "BOLDO","CORAL"
+    "POLLO","RATON","RATAS","MONOS","LOROS","GALLO","GATOS","PERRO","ZORRO","PECES","SAPOS","RANAS","CERDO","VACAS","PATOS","MULAS","TIGRE","JOTES","ABEJA","OVEJA","CHITA","PULPO","PUMAS","BURRO","TOROS"
 ]
 
 MAX_INTENTOS = 6
@@ -150,7 +143,7 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
-st.markdown('<div class="titulo">🌎 Wordle: Medio Ambiente</div>', unsafe_allow_html=True)
+st.markdown('<div class="titulo">🐤 🐣 Wordle: Animales</div>', unsafe_allow_html=True)
 st.markdown('<div class="subtitulo">Adivina la palabra de 5 letras</div>', unsafe_allow_html=True)
 
 #st.markdown('<div class="titulo">Wordle: Medio Ambiente </div>', unsafe_allow_html=True)
