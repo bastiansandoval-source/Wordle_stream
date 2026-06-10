@@ -7,9 +7,8 @@ import streamlit as st
 st.set_page_config(page_title="Wordle en Streamlit", page_icon="🟩", layout="centered")
 
 PALABRAS = [
-    "CHILE", "CHINA","ISLAM","INDIA","LIBIA","ZAIRE","RUSIA","HAITI","MALTA","SIRIA","KABUL","MOSCU","QATAR","FIDJI","NAURU","WUHAN","COREA","RIYAD","RABAT","PARIS","MINSK","MILAN","GHANA","BENIN","ABUJA","ADDIS","DACCA","NEPAL","KUALA","QUITO","YEMEN","CAIRO","TUNEZ"
+    "PAPAS","PERAS","FRESA","MANGO","PALTA","LIMON","MELON","DATIL","NABOS","APIOS","COLES","CACAO","YUCAS","TUNAS"
 ]
-
 MAX_INTENTOS = 6
 LARGO_PALABRA = 5
 
